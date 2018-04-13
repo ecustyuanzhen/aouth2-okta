@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<style type="text/css">
+.align-center{
+position:fixed;left:50%;top:50%;margin-left:width/2;margin-top:height/2;
+}
+</style>
+<head>
+</head>
+<body>
+<div class="align-center">
+    <form role="form" method="post" action="/login/oauth2/authorization/okta">
+        <input placeholder="EMAIL" type="email" name="emai" id="email">
+        <br><br>
+        <input placeholder="PASSWORD" type="password" name="passwor" id="password">
+        <br><br><br>
+        <input type="submit" value="Submit" />
+        <a href="/oauth2/authorization/okta">okta</a>
+    </form>
+</div>
+</body>
